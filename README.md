@@ -21,6 +21,26 @@ El Drive contiene:
 - Un archivo `.zip` con las fuentes originales en formato GeoJSON (incidencias, colonias, datos demográficos, cámaras y aglomeraciones).
 - Una carpeta `resultados/` con los archivos ya procesados (`.gpkg` y `.csv`) generados por los notebooks de este repositorio.
 
+
+### Fuentes de datos
+
+Los cinco conjuntos de datos utilizados provienen de fuentes oficiales de la Ciudad de México. La siguiente tabla resume el origen, la dependencia responsable y el archivo correspondiente:
+
+| Conjunto de datos | Fuente / Dependencia | Archivo |
+|---|---|---|
+| Reportes de incidencia delictiva | Fiscalía General de Justicia de la CDMX, vía Portal de Datos Abiertos de la Ciudad de México | `reportes_incidenciaU.geojson` |
+| Geometría de colonias | Censo de Población y Vivienda 2010 (INEGI) / Portal de Datos Abiertos CDMX | `GeoColonias.geojson` |
+| Datos demográficos por colonia | Censo de Población y Vivienda 2010 (INEGI) | `DemograficosD_GJ.geojson` |
+| Posición de cámaras de videovigilancia | Centro de Comando, Control, Cómputo, Comunicaciones y Contacto Ciudadano de la CDMX (C5), solicitado vía INAI | `camaraPosU.geojson` |
+| Centros de aglomeración económica | Directorio Estadístico Nacional de Unidades Económicas, DENUE (INEGI) | `aglomeracionesU.geojson` |
+
+**Reportes de incidencia delictiva.** Cubre el período del 1 de enero de 2019 al 30 de septiembre de 2024. Cada registro incluye, entre otras columnas, el tipo de delito (`delito`), la categoría de impacto (`impacto_delito`: delito de alto impacto, bajo impacto o hecho no delictivo), el año y mes del hecho (`anio_hecho`, `mes_hecho`), la colonia y alcaldía donde ocurrió (`colonia`, `alcaldia`), su clave (`cve_col`) y las coordenadas geográficas (`latitud`, `longitud`) en EPSG:4326. Para este proyecto se trabaja únicamente con los delitos clasificados como de alto impacto (homicidio doloso, robo con violencia en sus distintas modalidades, secuestro, violación, entre otros).
+
+**Datos demográficos por colonia.** Contiene 1.814 colonias con población, superficie y densidad de vivienda según el Censo 2010: `pob_2010` (población), `SUP_COL_M2` (superficie en m²), `VIV2010` (número de viviendas) y `DENVIVHa` (densidad de vivienda por hectárea).
+
+**Cámaras de videovigilancia y aglomeraciones económicas.** Estas dos fuentes no se utilizan en la presente entrega, pero quedan disponibles como variables predictoras candidatas para la entrega final, en línea con lo descrito en la sección de Planteamiento metodológico del informe.
+
+
 ## Estructura del repositorio
 
 ```
