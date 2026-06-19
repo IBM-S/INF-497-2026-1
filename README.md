@@ -4,7 +4,7 @@ Ramo Analisis de Datos Espaciales.
 # Patrones espaciales y temporales de delitos de alto impacto en la Ciudad de México (2019–2024)
 
 **Autor:** Ignacio Muñoz Sánchez — Rol: 202173620-4
-**Curso:** INF-497 — Análisis de Datos Espaciales
+
 **Entrega:** Proyecto Final — Entrega 2
 
 ## Descripción del proyecto
