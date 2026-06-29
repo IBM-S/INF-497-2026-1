@@ -12,6 +12,8 @@ Proyecto final del curso INF-497. Analiza la distribución espacial y temporal d
 **Pregunta de investigación:** ¿Existen patrones espaciales y temporales en la distribución de delitos de alto impacto en la CDMX, y estos varían según la categoría de delito?
 
 ## Estructura del repositorio
+
+```
 ├── entrega_2/
 │   ├── H2_Procesamiento_de_Datos.ipynb
 │   ├── H2_Analisis.ipynb
@@ -23,6 +25,7 @@ Proyecto final del curso INF-497. Analiza la distribución espacial y temporal d
 │   └── README.md
 │
 └── README.md  ← este archivo
+```
 
 ## Entregas
 
